@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="header.png" alt="header_logo">
+    </header>
+    <div class="container">
+        <h2>Select your Shape</h2>
+        <p>Please select the shape that you would like
+            to calculate the area of and press the
+            button "Go to step 2"</p>
+        <label>
+            <input type="radio" value="Rectangle" id="rect" name="shape" class="form-radio">
+            Rectangle
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="Circle" id=" circle" name="shape" class="form-radio">
+            Circle
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="Square" id="square" name="shape" class="form-radio">
+            Square
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="Ellipse" id="ellipse" name="shape" class="form-radio">
+            Ellipse
+        </label>
+        <br>
+        <button onclick="checkShapeValue()">Check</button>
+
+
+
+        <div id="step2" class="step2-div">
+            <div id="circleDiv" style="display: none;">
+                <label>
+                    Please Enter Diameter of a Circle :
+                    <input type="number" name="" id="diameter" placeholder="Enter Diameter">
+                </label>
+                <button id="btn1">Check Area</button>
+            </div>
+            <div id="rectDiv" style="display: none;">
+                <label>
+                    Please Enter Length of a Rectangle :
+                    <input type="number" name="" id="leng" placeholder="Enter Length" value="">
+                </label><br>
+                <label>
+                    Please Enter width of a Rectangle :
+                    <input type="number" name="" id="wid" placeholder="Enter Width" value="">
+                </label>
+                <button id="btn2">Check Area</button>
+            </div>
+            <div id="squareDiv" style="display: none;">
+                <label>
+                    Please Enter Side value of a Square :
+                    <input type="number" name="" id="side" placeholder="Enter Side">
+                </label>
+                <button id="btn3">Check Area</button>
+            </div>
+            <div id="ellipseDiv" style="display: none;">
+                <label>
+                    Please Enter "a" value of a ellipse :
+                    <input type="number" name="" id="a" placeholder="Enter 'a' value">
+                </label><br>
+                <label>
+                    Please Enter "b" value of a ellipse :
+                    <input type="number" name="" id="b" placeholder="Enter 'b' value">
+                </label>
+                <button id="btn4">Check Area</button>
+            </div>
+        </div>
+
+        <div id="step3">
+            <p id="result"></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
